@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Baska</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<header class="topo">
+    <h1>NBA Descrições e Curiosidades</h1> 
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUydGw0aWJva2htdG4xcGkybHZtaHVrdDd2Mm9tbThmMDZuMTd2NGY2cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iPg2OZbNXc7uM/200.gif" alt="NBAgif" class="gifHeader">
+      <button class="barrinhas" onclick="abrirMenu()">☰</button>
+    </header>
+  
+<main class="principal">
+    <p>Colocaremos novas informações em breve. Fique atento a atualizações!🏀</p>
+
+<div class="latDireita"></div>
+<div class="latEsquerda"></div>
+
+
+<div id="menu">
+    <p>Início</p>
+    <p>Contato</p>
+    <p>Feedbacks</p>
+</div>
+
+<script>
+    //pega o elemento do html pelo id "leste", adicionando uma animação em seguida
+function girar() {
+    document.getElementById("Leste").style.transform = "rotate(360deg)";
+}
+//mesma coisa, mas com a outra lista
+function girar() {
+    document.getElementById("Oeste").style.transform = "rotate(360deg)";
+}
+//adiciona um "event listener", ou seja, um "evento" para o que o usuário fazer. Seja clicar, passar o cursor por cima..
+Leste.addEventListener("click", function () {
+    Leste.classList.add("girar");
+});
+
+Oeste.addEventListener("click", function () {
+    Oeste.classList.add("girar");
+});
+//"classList" serve para alternar uma classe em um elemento. Se a classe não existe, ele adiciona; se já existe, ele remove. Quando clicar, ativa ou desativa certa classe. No intuito de aparência e não funcionalidade
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("abrir");
+}
+</script>
+<div id="times-leste">
+    <section class="conferencia1">
+    <h2>Conferência Leste</h2>
+<p id="CL">--- Respectivos Times Listados Abaixo --- </p>
+    <ul class="listaTimes">
+       <li>Boston Celtics</li>
+       <li>New York Nicks</li>
+       <li>Philadelphia 76ers</li>
+       <li>Indiana Pacers</li>
+       <li>Miami Heat</li>
+       <li>Milwaukee Bucks</li>
+       <li>Orlando Magic</li>
+       <li>Washington Wizards</li>
+       <li>Brooklyn Nets</li>
+       <li>Toronto Raptors</li>
+    </ul>
+    </section>
+</div>
+    <a href="Pagina 2.html">
+    <button id="botaoLeste" onclick="girar()">Confira Aqui Os Times Separadamente!</button>
+</a>
+    </section>
+<div class="imagem">
+    <img src="https://s2.glbimg.com/ESNwPB1xVhTQTNVOysDyWwKiZ_s=/0x0:1024x1159/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2014/02/18/vincecarter_get.jpg" 
+    width="300" height="300" alt="jogadas">
+</div>
+  
+    <section class="conferencia2">
+    
+        <h2>Conferência Oeste</h2> 
+        <p id="CO">--- Respectivos Times Listados Abaixo ---</p>
+       
+    <ul class="listaTimes">
+        <li>Dallas Mavericks</li>
+       <li>Denver Nuggets</li>
+       <li>Houston Rockets</li>
+       <li>LA Clippers</li>
+       <li>Los Angeles Lakers</li>
+       <li>Memphis Grizzlies</li>
+       <li>New Orleans Pelicans</li>
+       <li>Oklahoma City Thunder</li>
+       <li>Phoenix Suns</li>
+       <li>Portland Trail Blazers</li>
+        <li>Sacramento Kings</li>
+       <li>San Antonio Spurs</li>
+       <li>Utah Jazz</li>
+    </ul>
+<a href="Pagina 2.html">
+    <button id="botaoOeste" onclick="girar()">Confira Aqui Os Times Separadamente!</button>
+</a>       
+    </section>
+    <div class="imagem">
+    <img src="https://conectapiaui.com.br/media/image_bank/2026/4/thumbs/lebron-james-alcanca-12-mil-assistencias-e-entra-para-grupo.jpg.1200x0_q95_crop.webp" 
+    width="400" height="300" alt="jogadas">
+</div>
+
+   </main>
+   <footer class="embaixo">
+   Autor: Klaus
+   </footer>
+</body>
+</html>
